@@ -1,23 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Answer</title>
+	</head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto+Mono&display=swap"
-        rel="stylesheet">
-  <title>Answer</title>
-</head>
-
-<body>
-  <%- include('./layout/navbar'); -%>
-
-    <h1 class="index-title">我是首頁</h1>
-
-    <script type="module" src="../main.js"></script>
-</body>
-
+	<body>
+		<div class="d-flex flex-row">
+			<%- include('./layout/navbar'); -%>
+			<main class="py-6 px-6 px-xl-0 container">
+				<section
+					class="d-flex flex-row justify-content-between align-items-center mb-7"
+				>
+					<div class="d-flex flex-row">
+						<p class="fs-4 fw-bold me-9">Assingment</p>
+						<button
+							class="d-flex flex-row custom-accordion align-items-center"
+							type="button"
+						>
+							<p class="fw-bold me-2">All Courses</p>
+							<span class="material-symbols-outlined text-success fw-bold">
+								expand_more
+							</span>
+						</button>
+					</div>
+					<div class="d-flex">
+						<span class="material-symbols-outlined me-4"> search </span>
+						<span class="material-symbols-outlined">
+							notifications_active
+						</span>
+					</div>
+				</section>
+				<section>
+					<button
+						class="d-flex flex-row custom-accordion align-items-center mb-1"
+					>
+						<p class="fw-bold me-2">All (4)</p>
+						<span class="material-symbols-outlined text-success fw-bold">
+							expand_more
+						</span>
+					</button>
+					<div class="d-flex flex-row gap-4 flex-row">
+						<ul class="list-group col-4">
+							<a href="#">
+								<li class="list-group-item p-3 bg-secondary">
+									<div
+										class="d-flex flex-row justify-content-between align-items-center mb-1"
+									>
+										<span class="color-gray fz-12">Chapter Assignment 2</span>
+										<span class="color-gray fz-12">4 hrs ago</span>
+									</div>
+									<div
+										class="d-flex flex-row justify-content-between align-items-center"
+									>
+										<p class="fw-bold">Please check this file…</p>
+										<span class="color-gray fz-12">Emily Wang</span>
+									</div>
+								</li>
+							</a>
+							<a href="#">
+								<li class="list-group-item p-3">
+									<div
+										class="d-flex flex-row justify-content-between align-items-center mb-1"
+									>
+										<span class="color-gray fz-12">Chapter Assignment 1</span>
+										<span class="color-gray fz-12">12 hrs ago</span>
+									</div>
+									<div
+										class="d-flex flex-row justify-content-between align-items-center"
+									>
+										<p class="fw-bold">My Homework</p>
+										<span class="color-gray fz-12">David Xu</span>
+									</div>
+								</li>
+							</a>
+							<a href="#">
+								<li class="list-group-item p-3">
+									<div
+										class="d-flex flex-row justify-content-between align-items-center mb-1"
+									>
+										<span class="color-gray fz-12">Final Assignment</span>
+										<span class="color-gray fz-12">18 hrs ago</span>
+									</div>
+									<div
+										class="d-flex flex-row justify-content-between align-items-center"
+									>
+										<p class="fw-bold">Have a problem with this…</p>
+										<span class="color-gray fz-12">Tony Wei</span>
+									</div>
+								</li>
+							</a>
+							<a href="#">
+								<li class="list-group-item p-3">
+									<div
+										class="d-flex flex-row justify-content-between align-items-center mb-1"
+									>
+										<span class="color-gray fz-12">Final Assignment</span>
+										<span class="color-gray fz-12">19 hrs ago</span>
+									</div>
+									<div
+										class="d-flex flex-row justify-content-between align-items-center"
+									>
+										<p class="fw-bold">Did I do it right?</p>
+										<span class="color-gray fz-12">Christina Lin</span>
+									</div>
+								</li>
+							</a>
+						</ul>
+						<div class="col-7 border-gray">
+							<div
+								class="d-flex bg-secondary border-bottom-gray flex-row justify-content-between align-items-center py-3 px-4"
+							>
+								<div class="d-flex flex-column">
+									<span class="fz-12 mb-1"
+										>Chapter Assignment 2 / HTML&CSS</span
+									>
+									<p class="fw-bold">Please check this file for me, thanks!</p>
+								</div>
+								<span class="material-symbols-outlined"> more_vert </span>
+							</div>
+							<div class="p-4">
+								<div class="d-flex">
+                  <div class="me-4">
+                    <img
+                      src="../assets/images/emilywang.jpeg"
+                      class="rounded-circle avatar"
+                      alt="emily avatar"
+                    />
+                  </div>
+									<div class="d-flex flex-column border-bottom-gray pb-4">
+										<p class="fw-bold mb-1">Emily Wang</p>
+										<span class="color-gray fz-12 mb-4">10:38 AM (4 hours ago)</span>
+                    <p class="mb-4">
+                      Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the height of the <span class="em">div</span> is bigger than the height of the <span class="em">img</span> ? There is a gap below the image, but it doesn’t seems to be a padding/margin. </br>
+                      What is the gap or extra space below image?
+                    </p>
+                    <button class="d-flex py-3 px-4 file-btn">
+                      <span class="material-symbols-outlined">
+                        attach_file
+                      </span>
+                      <p class="fw-bold">HW-2-David.zip</p>
+                    </button>
+									</div>
+								</div>
+                <div class="d-flex mt-4">
+                  <div class="me-4">
+                    <img
+                      src="../assets/images/andychen.jpeg"
+                      class="rounded-circle avatar"
+                      alt="andy avatar"
+                    />
+                  </div>
+									<div class="d-flex flex-column pb-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                      <div>
+                        <p class="fw-bold mb-1">Andy Chen (You)</p>
+                        <span class="color-gray fz-12 mb-4">13:24 AM (1 hours ago)</span>
+                      </div>
+                      <div class="d-flex">
+                        <span class="material-symbols-outlined icon-not-fill me-4">
+                          star
+                        </span>
+                        <span class="material-symbols-outlined">
+                          edit
+                        </span>
+                      </div>
+                    </div>
+                    <p class="mb-4">
+                      Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on. There is space below that line for the descenders you find on letters like g, j, p and q. 
+                      </br>
+                      </br>
+                      You can:
+                      </br>
+                      </br>
+                      • adjust the vertical-align of the image to position it elsewhere (e.g. the middle ) or 
+                      </br>
+                      • change the display so it isn’t inline.
+                    </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</div>
+		<script type="module" src="../main.js"></script>
+	</body>
 </html>

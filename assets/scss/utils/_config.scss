@@ -1,0 +1,30 @@
+a {
+  display: block;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.icon-not-fill {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+.nav {
+  width: 296px;
+  min-height: 100vh;
+}
+
+.avatar {
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+}
